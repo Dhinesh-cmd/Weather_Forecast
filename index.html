@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⛅Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <!-- Font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+    
+<!-- Cloud Animation Layers -->
+<div class="clouds"></div>
+<div class="clouds2"></div>
+
+<main class="main-container">
+  <header class="input-container">
+    <input type="text" class="city-input" placeholder="Search City">
+    <button class="search-btn">
+      <span class="material-symbols-outlined">
+        search
+      </span>
+    </button>
+  </header>
+   <!-- Div 1 Location-->
+  <section class="weather-info" style="display: none;">
+    <div class="location-date-container">
+      <div class="location">
+        <span class="material-symbols-outlined">
+          location_on
+        </span>
+        <h4 class="country-txt">Chennai</h4>
+      </div>
+      <h5 class="current-date-txt regular-txt">Tue, 19 Aug</h5>
+    </div>
+   <!-- Div 2 (img) -->
+    <div class="weather-summary-container">
+      <img src="assests/message-img/cloudy.png" alt="cloud-img" class="weather-summary-img">
+      <div class="weather-summary-info">
+        <h1 class="temp-txt">29 °C</h1>
+        <h3 class="condition-txt regular-txt" >Clouds</h3>
+      </div>
+    </div>
+     <!-- Div 3 Humidity (left)-->
+    <div class="weather-condition-container"> <!--Condition Div-->
+      <div class="condition-item">
+        <span class="material-symbols-outlined">
+          water_drop
+        </span>
+        <div class="condition-info">
+          <h5 class="regular-txt">Humidity</h5>
+          <h5 class="humidity-value-txt">55%</h5>
+        </div>
+      </div>
+      <!-- Div 4 Wind (right) -->
+        <div class="condition-item">
+        <span class="material-symbols-outlined">
+          air
+        </span>
+        <div class="condition-info">
+          <h5 class="regular-txt">Wind Speed</h5>
+          <h5 class="wind-value-txt">2 M/s</h5>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="forecast-items-container">
+      <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">19 Aug</h5>
+        <img src="assests/message-img/thunder.png" alt="img1" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29 °C</h5>
+      </div>
+
+      <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">19 Aug</h5>
+        <img src="assests/message-img/thunder.png" alt="img2" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29 °C</h5>
+      </div>
+
+      <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">19 Aug</h5>
+        <img src="assests/message-img/thunder.png" alt="img3" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29 °C</h5>
+      </div>
+
+      <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">19 Aug</h5>
+        <img src="assests/message-img/thunder.png" alt="img4" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29 °C</h5>
+      </div>
+    </div>
+  </section>
+
+<!-- Front Img -->
+
+  <section class="search-city section-message">
+    <img class="message-img" src="Image-Front.png" alt="front-img">
+    <div>
+     <h1>Get Weather</h1>
+      <h4 class="regular-txt">
+        Find out the weather conditions of the city
+      </h4>
+    </div>
+  </section>
+
+<section class="loading section-message" style="display: none;">
+  <h2>Loading...</h2>
+</section>
+
+
+  <section class="not-found section-message" style="display: none;">
+    <img class="not-found-img" src="assests/not-found.png" alt="404Error-img">
+    <div>
+      <h1 class="invalid">Invalid Input ⚠️</h1>
+      <h4 class="regular-txt error-msg-head">
+        Can't Fint the place <span class="error-msg invalid"></span>
+      </h4>
+    </div>
+  </section>
+</main>
+  
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
