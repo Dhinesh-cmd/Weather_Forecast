@@ -21,21 +21,30 @@ body {
       background-size: cover;
       background-position: center;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       /* opacity: 0.9; */
     }
+.heading{
+  margin-bottom: 30px;
+  font-size: 38px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #8e2de2, #ff0080);
 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
     /* Cloud layers Starts */
     .clouds {
       position: absolute;
       top: 0;
       left: 0;
-      width: 1500%;
+      width: 15000%;
       height: 100%;
       background: url("clouds_running.jpg");
       background-size: contain;
-      animation: moveClouds 200s linear infinite;
+      animation: moveClouds 2000s linear infinite;
       /* backdrop-filter: blur(3px); */
       opacity: 0.4;
     }
